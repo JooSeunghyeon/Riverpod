@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/layout/default_layout.dart';
+import 'package:flutter_project/screen/family_modifire_screen.dart';
 import 'package:flutter_project/screen/future_provider_screen.dart';
 import 'package:flutter_project/screen/state_provider_screen.dart';
 import 'package:flutter_project/screen/stream_provider_screen.dart';
@@ -53,6 +54,16 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text('StreamProviderScreen'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => FamilyModifierScreen(),
+                ),
+              );
+            },
+            child: Text('FamilyModifierScreen'),
           ),
         ],
       ),
