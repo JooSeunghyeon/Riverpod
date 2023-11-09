@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/layout/default_layout.dart';
+import 'package:flutter_project/screen/auto_dispose_modifier_screen.dart';
 import 'package:flutter_project/screen/family_modifire_screen.dart';
 import 'package:flutter_project/screen/future_provider_screen.dart';
 import 'package:flutter_project/screen/state_provider_screen.dart';
@@ -64,6 +65,16 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text('FamilyModifierScreen'),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => AutoDisoposeModifierScreen(),
+                ),
+              );
+            },
+            child: Text('AutoDisoposeModifierScreen'),
           ),
         ],
       ),
