@@ -14,7 +14,7 @@ class AutoDisoposeModifierScreen extends ConsumerWidget {
         title: 'AutoDisoposeModifierScreen',
         body: Center(
           child: state.when(
-            data: (data) => Text(|
+            data: (data) => Text(
               data.toString(),
             ),
             error: (err, stack) => Text(
