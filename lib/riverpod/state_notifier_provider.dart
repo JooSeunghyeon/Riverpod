@@ -1,7 +1,9 @@
 import 'package:flutter_project/model/shopping_item_model.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final shoppingListProvider = StateNotifierProvider<ShoppingListNotifier,List<ShoppingItemModel> >((ref) => ShoppingListNotifier());
+final shoppingListProvider =
+    StateNotifierProvider<ShoppingListNotifier, List<ShoppingItemModel>>(
+        (ref) => ShoppingListNotifier());
 
 class ShoppingListNotifier extends StateNotifier<List<ShoppingItemModel>> {
   ShoppingListNotifier()

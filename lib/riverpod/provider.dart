@@ -7,11 +7,11 @@ final filteredShoppingListProvider = Provider<List<ShoppingItemModel>>(
     final filterState = ref.watch(filterProvider);
     final shoppingListState = ref.watch(shoppingListProvider);
 
-    if (filterState == FilterState.all) {
+    if (filterState == FilterState.all) { // all 전체를 반환
       return shoppingListState;
     }
 
-    return shoppingListState
+    return shoppingListState // ex) isSpicy - 조건에 따른 반환
         .where((element) => filterState == FilterState.spicy
             ? element.isSpicy
             : !element.isSpicy)
