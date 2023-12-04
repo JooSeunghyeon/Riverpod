@@ -61,6 +61,14 @@ class CodeGenerationScreen extends ConsumerWidget {
               },
               child: Text('Decrement'),
             ),
+            // invalidate()
+            // 유효하지 않게 하다
+            ElevatedButton(
+              onPressed: () {
+                ref.invalidate(gStateNotifierProvider); // 상태가 어떻게 됬던 초기상태로 돌아온다. (초기화라고 생각하면됨 - 초깃값 ) 
+              },
+              child: Text('invalidate'),
+            ),
           ],
         )
       ]),
