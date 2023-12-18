@@ -11,6 +11,8 @@ import 'package:flutter_project/screen/state_provider_screen.dart';
 import 'package:flutter_project/screen/stream_provider_screen.dart';
 import 'package:flutter_project/screen/stste_notifier_provider_screen.dart';
 
+import 'chart_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -119,6 +121,18 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: Text('CodeGenerationScreen'),
+          ),
+
+          // Char Test
+          ElevatedButton(
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (_) => ChartScreen(),
+                ),
+              );
+            },
+            child: Text('ChartShjooTest'),
           ),
 
         ],
